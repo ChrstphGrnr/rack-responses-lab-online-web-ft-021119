@@ -9,6 +9,8 @@ class Application
     case time.hour
     when > 12
       then resp.write "Good Afternoon"
+    else resp.write "Good Morning"
+    end
 
 
   end
