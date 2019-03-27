@@ -4,12 +4,12 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    binding.pry
+    # binding.pry
     time = Time.now
     case time.hour
-    when > 12
-      then resp.write "Good Afternoon"
-    else resp.write "Good Morning"
+    when 12..24
+        then resp.write "Good Afternoon"
+      else resp.write "Good Morning"
     end
 
 
