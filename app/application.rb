@@ -5,7 +5,10 @@ class Application
   def call(env)
     resp = Rack::Response.new
     binding.pry
-    Time.now
+    time = Time.now
+    case time.hour
+      > 12 
+
 
   end
 
