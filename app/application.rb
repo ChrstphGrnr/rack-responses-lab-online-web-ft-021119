@@ -7,7 +7,8 @@ class Application
     binding.pry
     time = Time.now
     case time.hour
-      > 12 
+    when > 12
+      then resp.write "Good Afternoon"
 
 
   end
